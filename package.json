@@ -1,0 +1,38 @@
+{
+  "name": "spinning-preloader",
+  "version": "1.0.0",
+  "description": "spinning-preloader",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --port 3000",
+    "build": "rimraf ./public && webpack --config ./config/webpack.prod.js --profile --bail",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgluhov/spinning-preloader.git"
+  },
+  "keywords": [
+    "spinning",
+    "preloader"
+  ],
+  "author": "'JGluhov' <'jgluhov@gmail.com'>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgluhov/spinning-preloader/issues"
+  },
+  "homepage": "https://github.com/jgluhov/spinning-preloader#readme",
+  "devDependencies": {
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "html-webpack-plugin": "2.24.1",
+    "rimraf": "2.5.4",
+    "style-loader": "0.13.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "2.4.0",
+    "ts-loader": "1.2.2",
+    "typescript": "2.0.10",
+    "webpack": "1.13.3",
+    "webpack-merge": "1.0.2"
+  }
+}
