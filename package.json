@@ -2,7 +2,7 @@
   "name": "spinning-preloader",
   "version": "1.0.0",
   "description": "spinning-preloader",
-  "main": "index.js",
+  "main": "dist/spinning-preloader.css",
   "scripts": {
     "start": "live-server",
     "build": "rimraf ./dist && gulp default"
