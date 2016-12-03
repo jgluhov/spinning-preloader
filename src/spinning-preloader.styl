@@ -13,8 +13,8 @@ $largeCircleAnimationTime = 2s
 $mediumCircleAnimationTime = 3s
 $smallCircleAnimationTime = 1.5s
 
-$loaderTransitionFn =  cubic-bezier(0.645, 0.045, 0.355, 1.000)
-$loaderTransition = 'opacity .3s %s' % $loaderTransitionFn
+$spinnerPreloaderTransitionFn =  cubic-bezier(0.645, 0.045, 0.355, 1.000)
+$spinnerPreloaderTransition = 'opacity .3s %s' % $spinnerPreloaderTransitionFn
 
 set-box-position(n)
   top n
@@ -25,7 +25,7 @@ set-box-position(n)
 set-box-animation(time)
   animation 'spin %s linear infinite' % time
 
-#loader
+.spinner-preloader-container
   position fixed
   top 0
   left 0
@@ -36,15 +36,15 @@ set-box-animation(time)
   align-items center
   justify-content center
   background #f2f2f2 linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%)
-  transition $loaderTransition
+  transition $spinnerPreloaderTransition
 
-  > .loader-elements,
-  > .loader-elements:before,
-  > .loader-elements:after
+  > .spinner-preloader-elements,
+  > .spinner-preloader-elements:before,
+  > .spinner-preloader-elements:after
     border 3px solid transparent
     border-radius 50%
 
-  > .loader-elements
+  > .spinner-preloader-elements
     display block
     width $boxWidth
     height $boxHeight
