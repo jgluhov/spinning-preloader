@@ -1,6 +1,6 @@
 {
   "name": "spinning-preloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "spinning-preloader",
   "main": "dist/spinning-preloader.css",
   "scripts": {
