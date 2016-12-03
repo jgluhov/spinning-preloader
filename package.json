@@ -1,11 +1,12 @@
 {
   "name": "spinning-preloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "spinning-preloader",
   "main": "dist/spinning-preloader.css",
   "scripts": {
     "start": "live-server",
-    "build": "rimraf ./dist && gulp default"
+    "build": "rimraf ./dist && gulp default",
+    "preinstall": "rimraf ./dist && gulp default"
   },
   "repository": {
     "type": "git",
